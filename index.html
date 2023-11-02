@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+    <form name="cals">
+        <div>
+            <input type="text" name="aa">
+        </div>
+        <div class="a">
+            <input type="button" value="C" onclick="cals.aa.value=''">
+            <input type="button" value="%" onclick="cals.aa.value=eval(cals.aa.value/100)">
+            <input type="button" value="Del" onclick="cals.aa.value=cals.aa.value.slice(0,-1)">
+            
+        </div>
+        <div>
+            <input type="button" value="1" onclick="cals.aa.value+='1'">
+            <input type="button" value="2" onclick="cals.aa.value+='2'">
+            <input type="button" value="3" onclick="cals.aa.value+='3'">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="cals.aa.value+='4'">
+            <input type="button" value="5" onclick="cals.aa.value+='5'">
+            <input type="button" value="6" onclick="cals.aa.value+='6'">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="cals.aa.value+='7'">
+            <input type="button" value="8" onclick="cals.aa.value+='8'">
+            <input type="button" value="9" onclick="cals.aa.value+='9'">
+        </div>
+        <div>
+            <input type="button" value="0" onclick="cals.aa.value+='0'">
+            <input type="button" value="00" onclick="cals.aa.value+='00'">
+            <input type="button" value="." onclick="cals.aa.value+='.'">
+        </div>
+        <div class="g">
+            <input class="it" type="button" value="/" onclick="cals.aa.value+='/'">
+            <input type="button" value="*" onclick="cals.aa.value+='*'">
+            <input type="button" value="-" onclick="cals.aa.value+='-'">
+            <input type="button" value="+" onclick="cals.aa.value+='+'">
+            <input type="button" value="=" onclick="cals.aa.value=eval(aa.value)">
+        </div>
+    </form>
+</body>
+</html>
